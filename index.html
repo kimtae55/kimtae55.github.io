@@ -4,6 +4,51 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <title>Taehyo Kim</title>
+    <style>
+      @media (max-width: 600px) {
+        .profile-flex {
+          flex-direction: column !important;
+          align-items: center !important;
+          text-align: center;
+        }
+      } 
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+        flex-wrap: nowrap;
+        padding: 2.5%;
+      }
+
+      .left-content {
+        flex: 1 1 60%;
+        max-width: 63%;
+      }
+
+      .right-image {
+        flex: 0 0 220px;
+        max-width: 250px;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column-reverse;
+          align-items: center;
+          text-align: center;
+        }
+
+        .left-content,
+        .right-image {
+          max-width: 100%;
+          flex: 1 1 100%;
+        }
+
+        .left-content h1 {
+          justify-content: center;
+        }
+      }
+    </style>
 
     <meta name="author" content="Taehyo Kim">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,15 +58,17 @@
     
   </head>
 
-  <body>
-    <table style="margin-top: 100px; width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<body>
+  <div style="margin-top: 100px; margin-bottom: 100px;">
+  <table style="margin-top: 100px; width:100%; max-width:800px; border:0; border-spacing:0; border-collapse:separate; margin:auto;">
+    <tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; flex-wrap: nowrap; padding: 2.5%;">
 
-            <!-- Left side: text and links -->
-            <div style="flex: 1 1 60%; max-width: 63%;">
+          <!-- Responsive flex container inside centered table -->
+          <div class="profile-flex" style="display: flex; flex-wrap: wrap; gap: 40px; padding: 2.5%; justify-content: space-between; align-items: flex-start;">
+            <!-- Text block -->
+            <div style="flex: 1 1 300px; max-width: 100%;">
               <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 20px; flex-wrap: wrap;">
                 <h1 style="margin: 0;">Taehyo Kim</h1>
                 <div style="font-size: 0.9em;">
@@ -41,14 +88,16 @@
               </p>
             </div>
 
-            <!-- Right side: profile image -->
-            <div style="flex: 0 0 220px; max-width: 250px;">
+                        <!-- Image block (first for mobile stacking) -->
+            <div style="flex: 1 1 220px; max-width: 250px; text-align: center;">
               <a href="images/tae.jpeg">
                 <img src="images/tae.jpeg" alt="profile photo"
-                     style="width: 100%; object-fit: cover; border-radius: 50%;" class="hoverZoomLink">
+                    style="width: 100%; max-width: 220px; object-fit: cover; border-radius: 50%;" class="hoverZoomLink">
               </a>
             </div>
-          </tbody></table>
+          </div>
+
+
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
@@ -395,6 +444,7 @@
   </td>
 </tr>
 </table>
+</div>
 </body>
 </html>
 
