@@ -31,21 +31,33 @@
         max-width: 250px;
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 600px) {
+
+        /* 1 ─ tighten the container spacing */
         .container {
-          flex-direction: column-reverse;
+          flex-direction: column;      /* stack text above image (or use column-reverse) */
           align-items: center;
           text-align: center;
+
+          /* replace the original 40 px row gap with ~12 px */
+          row-gap: 0.75rem;
+          column-gap: 0;               /* horizontal gap irrelevant in single column */
+
+          /* trim the top padding so the picture sits higher on the page */
+          padding-top: 1rem;           /* was 2.5 % */
         }
 
+        /* 2 ─ let both blocks fill full width */
         .left-content,
         .right-image {
-          max-width: 100%;
           flex: 1 1 100%;
+          max-width: 100%;
         }
 
-        .left-content h1 {
-          justify-content: center;
+        /* 3 ─ shrink the image itself */
+        .right-image img {
+          width: 65%;                  /* adjust 45-80 % to taste */
+          height: auto;
         }
       }
     </style>
