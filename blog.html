@@ -2,92 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Just a space for learning</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem 1rem 3rem;
-      color: #222;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .toc {
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      padding: 1rem 1.5rem;
-      margin-bottom: 2rem;
-      background: #fafafa;
-    }
-    .toc h2 {
-      margin-top: 0;
-      font-size: 1.1rem;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: #666;
-    }
-    .toc ul {
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
-    }
-    .toc li {
-      margin-bottom: 0.4rem;
-    }
-    .toc a {
-      text-decoration: none;
-      color: #0064c8;
-    }
-    .toc a:hover {
-      text-decoration: underline;
-    }
-    section {
-      margin-bottom: 3rem;
-    }
-    section h3 {
-      margin-top: 0;
-      color: #333;
-    }
-  </style>
+  <title>Notes | Taehyo Kim</title>
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">TK</span>
+      <span>Taehyo Kim</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#papers">Papers</a>
+      <a href="data/CV.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
+  </header>
 
-  <h1>Just my notes for learning</h1>
+  <main>
+    <section class="section-shell notes-hero">
+      <h1>Learning logs for methods I return to often.</h1>
+      <p class="lead">A compact place for references, derivations, and implementation notes.</p>
+    </section>
 
-  <nav class="toc">
-    <h2>Table of Contents</h2>
-    <ul>
-      <li><a href="#topic-1">Topic 1 – Self-supervised learning</a></li>
-      <li><a href="#topic-2">Topic 2 – FDR controlling methods</a></li>
-      <li><a href="#topic-3">Topic 3 – Canonical correlation analysis</a></li>
-      <li><a href="#topic-4">Topic 4 – Survival analysis</a></li>
-    </ul>
-  </nav>
+    <section class="section-shell notes-grid">
+      <a class="note-tile" href="#self-supervised-learning">
+        <span>01</span>
+        <h2>Self-Supervised Learning</h2>
+        <p>Representation learning notes, ultrasound ideas, and reading traces.</p>
+      </a>
+      <a class="note-tile" href="#fdr-control">
+        <span>02</span>
+        <h2>FDR Control</h2>
+        <p>Multiple testing, spatial dependence, and error-control frameworks.</p>
+      </a>
+      <a class="note-tile" href="#cca">
+        <span>03</span>
+        <h2>Canonical Correlation Analysis</h2>
+        <p>Sparse CCA, biomedical association studies, and optimization details.</p>
+      </a>
+      <a class="note-tile" href="#survival-analysis">
+        <span>04</span>
+        <h2>Survival Analysis</h2>
+        <p>Modeling time-to-event outcomes and related biomedical workflows.</p>
+      </a>
+    </section>
 
-  <section id="topic-1">
-    <h3>Topic 1 – Self-supervised learning</h3>
-    <p>Placeholder text for Topic 1. Add your thoughts, links, or summaries here.</p>
-  </section>
+    <section class="section-shell note-sections">
+      <article id="self-supervised-learning">
+        <h2>Self-Supervised Learning</h2>
+        <p>Placeholder text for future notes on representation learning, contrastive learning, masked prediction, and clinical signal structure.</p>
+      </article>
+      <article id="fdr-control">
+        <h2>FDR Control</h2>
+        <p>Placeholder text for future notes on false discovery rate control, local index of significance, and spatial multiple testing.</p>
+      </article>
+      <article id="cca">
+        <h2>Canonical Correlation Analysis</h2>
+        <p>Placeholder text for future notes on CCA, sparsity, multimodal association studies, and scalable optimization.</p>
+      </article>
+      <article id="survival-analysis">
+        <h2>Survival Analysis</h2>
+        <p>Placeholder text for future notes on censoring, hazard modeling, evaluation, and biomedical prediction settings.</p>
+      </article>
+    </section>
+  </main>
 
-  <section id="topic-2">
-    <h3>Topic 2 – FDR controlling methods</h3>
-    <p>Placeholder text for Topic 2. Replace with your notes, derivations, or references.</p>
-  </section>
-
-  <section id="topic-3">
-    <h3>Topic 3 – Canonical correlation analysis</h3>
-    <p>Placeholder text for Topic 3. Use this area for learning logs, experiments, etc.</p>
-  </section>
-
-  <section id="topic-4">
-    <h3>Topic 4 – Survival analysis</h3>
-    <p>Placeholder text for Topic 4. Add book summaries, interesting papers, or personal insights.</p>
-  </section>
-
+  <footer class="site-footer">
+    <span>Taehyo Kim</span>
+    <span>Previous notes page archived at <a href="past/blog.html">past/blog.html</a>.</span>
+  </footer>
 </body>
 </html>
